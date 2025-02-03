@@ -1,20 +1,8 @@
 "use client";
-
-import { get_prompt_response } from "@/utils/helpers";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [state, setState] = useState({});
-
-  useEffect(() => {
-    (async () => {
-      const result:unknown = await get_prompt_response();
-      if (result) {
-        
-      setState(result);
-      }
-    })();
-  }, []);
 
   console.log("----------", state);
   return (
