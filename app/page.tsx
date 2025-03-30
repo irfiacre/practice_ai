@@ -1,16 +1,17 @@
-"use client";
-import Footer from "@/src/components/Footer";
-import { useState } from "react";
+import DashboardPage from "@/src/views/pages/Dashboard";
+import { Metadata } from "next";
 
-export default function Home() {
-  const [state, setState] = useState<unknown>(null);
-
+export const metadata: Metadata = {
+  title: "Toefl Practice",
+  description:
+    "Toefl Practice is a specialized software solution designed to streamline the driver recruitment and onboarding process for YEGO, addressing the unique needs of the transportation industry in Rwanda. The platform focuses on efficiently recruiting qualified drivers, conducting necessary background checks, and facilitating comprehensive training programs to ensure a safe and reliable transportation service.",
+};
+const LandingPage = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <span>Header</span>
-      </main>
-      <Footer />
+    <div className="bg-backgroundColor">
+      <DashboardPage />
     </div>
   );
-}
+};
+
+export default LandingPage;

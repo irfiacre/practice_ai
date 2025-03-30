@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Driver Hub
 
-## Getting Started
+This is a recruitment web application intended mainly as a comprehensive platform to efficiently manage both submitted applications and individual onboarding plans for drivers.
 
-First, run the development server:
+##### Project Status:
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf035d38-e671-489d-8e86-4314d37cab0e/deploy-status)](https://app.netlify.com/sites/driverhub/deploys)
+
+#### Getting Started
+
+First Clone this [repository](https://github.com/irfiacre/driver-hub_web.git), then run these commands:
 
 ```bash
+# Navigate to cloned repo
+cd driver-hub_web
+
+# Install project dependencies
+npm install
+
+# Run deployment server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or use this all in one command:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# After cloning the repo
+cd driver-hub_web && npm install && npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+#### Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Authentication.
+2. Application, Onboarding, and Courses Management.
+3. Feedback reception and provision.
+4. Chatting.
+5. Dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Contribute
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> If you want to contribute to this project, You are welcome to submit a PR.
