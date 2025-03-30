@@ -1,7 +1,8 @@
+"use client"
 import { getAllStaff } from "@/services/firebase/authentication";
 import AnalyticsCard from "@/src/components/cards/AnalyticsCard";
 import BaseCard from "@/src/components/base/BaseCard";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
 
 const DashboardPage = () => {
@@ -46,62 +47,32 @@ const DashboardPage = () => {
 
   const analytics = [
     {
-      title: "Applications",
+      title: "Questions",
       count: data.length,
     },
     {
-      title: "Accepted",
+      title: "By Community",
       count: data.filter((elt: any) => elt.status === "approved").length,
     },
     {
-      title: "Pending",
+      title: "By AI",
       count: data.filter((elt: any) => elt.status === "pending").length,
     },
-    {
-      title: "Rejected",
-      count: data.filter((elt: any) => elt.status === "rejected").length,
-    },
+    // {
+    //   title: "Rejected",
+    //   count: data.filter((elt: any) => elt.status === "rejected").length,
+    // },
   ];
-  const componentRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex flex-row flex-wrap justify-between max-md:justify-start items-center gap-1.5 py-1.5">
+      <div className="flex flex-row flex-wrap justify-start max-md:justify-start items-center gap-3 py-1.5">
         {analytics.map((item) => (
           <div className="w-60 py-1.5 max-sm:w-32" key={item.title}>
             <AnalyticsCard title={item.title} count={item.count} />
           </div>
         ))}
       </div>
-      <div className="flex flex-row justify-between items-center">
-        <div className="w-2/5">
-          <Datepicker
-            value={dateRange}
-            onChange={(val) => setDateRange(val)}
-            primaryColor={"rose"}
-            showShortcuts={true}
-            showFooter
-            placeholder="Report Date Range"
-            maxDate={new Date()}
-          />
-        </div>
-      </div>
-
-      <BaseCard className="px-10 py-5">
-        <div className="flex flex-row justify-between p-1.5 mb-5">
-          <h1 className="text-xl">More statistics</h1>
-          <span className="text-textLightColor font-light">Just Now</span>
-        </div>
-        {moreStatistics.map((item) => (
-          <div key={item.title}>
-            <div className="flex flex-row justify-between p-1.5">
-              <h1 className="font-medium">{item.title}</h1>
-              <span className="text-textLightColor">{item.count}</span>
-            </div>
-            <hr />
-          </div>
-        ))}
-      </BaseCard>
     </div>
   );
 };

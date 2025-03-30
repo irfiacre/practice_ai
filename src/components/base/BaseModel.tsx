@@ -17,7 +17,7 @@ const BaseModel = ({
       <div className={containerStyle}>
         <BaseCard className="h-1/4">
           <div className="flex flex-row items-center justify-between p-5">
-            <h1 className="text-xl text-textLightColor font-normal capitalize">
+            <h1 className="text-xl text-text_light font-normal capitalize">
               {title}
             </h1>
             <button

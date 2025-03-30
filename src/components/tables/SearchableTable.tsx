@@ -65,17 +65,17 @@ const SearchableTable = ({ data }: { data: Array<any> }) => {
                           ? "text-successGreen"
                           : item.status === "rejected"
                           ? "text-red-600"
-                          : "text-textLightColor"
+                          : "text-text_light"
                       }`}
                     >
                       ({item.status})
                     </span>
                   </div>
-                  <span className="text-textLightColor font-light">
+                  <span className="text-text_light font-light">
                     National ID: {item.baseInformation.nationalId}
                   </span>
                   <br />
-                  <span className="text-textLightColor font-light">
+                  <span className="text-text_light font-light">
                     Driver License: {item.baseInformation.driverLicenseId}
                   </span>
                 </div>

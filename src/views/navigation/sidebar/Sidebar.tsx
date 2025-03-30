@@ -16,34 +16,32 @@ export const Sidebar = () => {
         icon: "material-symbols:dashboard",
       },
     ],
-    applications: [
+    sections: [
       {
-        title: "All Applications",
-        subtitle: "All submitted Applications",
-        url: "applications",
-        icon: "fa:send",
+        title: "Reading",
+        subtitle: "Practice Toefl reading section",
+        url: "reading",
+        icon: "ri:book-read-fill",
       },
       {
-        title: "Chats",
-        subtitle: "Your chats with applicants",
-        url: "chats",
-        icon: "ic:baseline-message",
-      },
-    ],
-    onboarding: [
-      {
-        title: "All Plans",
-        subtitle: "Onboarding plans",
-        url: "plans",
-        icon: "icon-park-outline:list",
+        title: "Listening",
+        subtitle: "Practice Toefl Listening section",
+        url: "Listening",
+        icon: "fluent:speaker-1-16-filled",
       },
       {
-        title: "Employees",
-        subtitle: "Track employees onboarding progress",
-        url: "employees",
-        icon: "material-symbols:supervised-user-circle",
+        title: "Speaking",
+        subtitle: "Practice Toefl speaking section",
+        url: "speaking",
+        icon: "mdi:microphone",
       },
-    ],
+      {
+        title: "Writing",
+        subtitle: "Practice Toefl writing section",
+        url: "writing",
+        icon: "clarity:note-solid",
+      },
+    ]
   };
   const [searchText, setSearchText] = useState("");
 
@@ -52,10 +50,10 @@ export const Sidebar = () => {
     setSearchText(e.target.value);
   };
   return (
-    <div className="px-6 py-9 border border-r-sidebarBorderColor h-lvh flex flex-col gap-6">
+    <div className="bg-sidebar_background px-6 py-9 border h-lvh flex flex-col gap-6">
       <div>
         <LogoComponent small />
-        <div className="p-3.5">
+        <div className="py-3.5">
           <SearchableInput
             inputID="sidebarSearch"
             value={searchText}
@@ -69,20 +67,17 @@ export const Sidebar = () => {
       </div>
       <div>
         <MenuSection
-          title="Applications"
-          menuItems={sidebarMenu.applications}
+          title="Individual Sections"
+          menuItems={sidebarMenu.sections}
         />
       </div>
-      <div>
-        <MenuSection title="Onboarding" menuItems={sidebarMenu.onboarding} />
-      </div>
-      <div className="py-6 ml-4">
+      <div className="py-6">
         <Link
           href="/courses"
           scroll={false}
-          className="flex items-center text-textLightColor text-xl cursor-pointer hover:underline"
+          className="flex items-center text-text_light text-xl cursor-pointer hover:underline"
         >
-          <p>Courses</p>
+          <p>Give us feedback </p>
           <Icon
             icon="mingcute:right-fill"
             fontSize={24}

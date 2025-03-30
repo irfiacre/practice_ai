@@ -37,7 +37,7 @@ const TopSection = () => {
           <button
             type="button"
             onClick={() => handleBtnClicked("login")}
-            className="capitalize text-white bg-primary hover:bg-primaryDark focus:outline-none  font-medium rounded-md text-md text-center py-2.5 px-5 disabled:bg-borderColorLight"
+            className="capitalize text-white bg-primary hover:bg-primaryDark focus:outline-none  font-medium rounded-md text-md text-center py-2.5 px-5 disabled:bg-border_light"
           >
             Login
           </button>
@@ -47,7 +47,7 @@ const TopSection = () => {
       <div className="flex flex-row items-center justify-between pt-24 max-md:flex-wrap">
         <div className="space-y-5">
           <div>
-            <span className="text-textDarkColor text-8xl font-semibold max-md:text-5xl">
+            <span className="text-black-500 text-8xl font-semibold max-md:text-5xl">
               Welcome to
             </span>
             <br />
@@ -55,7 +55,7 @@ const TopSection = () => {
               Driver Hub
             </span>
           </div>
-          <p className="text-textLightColor">
+          <p className="text-text_light">
             Want to join as a driver ? Download our App here
           </p>
           <div className="flex flex-row items-center justify-start gap-10">

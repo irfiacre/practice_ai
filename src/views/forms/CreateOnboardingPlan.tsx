@@ -48,14 +48,14 @@ const CreateOnboardingPlan = ({
         <div className="p-3.5">
           <label
             htmlFor="description"
-            className="block mb-2 text-textDarkColor font-bold"
+            className="block mb-2 text-black-500 font-bold"
           >
             Description
           </label>
           <textarea
             id="description"
             rows={2}
-            className={`block w-full p-2 h-14 bg-backgroundColor border border-borderColorLight focus:bg-white focus:border-borderColorLight text-md rounded-md  focus:outline-none`}
+            className={`block w-full p-2 h-14 bg-background_color border border-border_light focus:bg-white focus:border-border_light text-md rounded-md  focus:outline-none`}
             placeholder="Description"
             value={state.description}
             onChange={handleInputChange}
@@ -66,7 +66,7 @@ const CreateOnboardingPlan = ({
         <button
           type="submit"
           onClick={handleSubmitForm}
-          className="w-full h-16 text-white bg-primary hover:bg-primaryDark focus:outline-none  font-medium rounded-md text-md text-center py-3 disabled:bg-borderColorLight"
+          className="w-full h-16 text-white bg-primary hover:bg-primaryDark focus:outline-none  font-medium rounded-md text-md text-center py-3 disabled:bg-border_light"
           disabled={loading}
         >
           {loading ? (

@@ -71,13 +71,13 @@ const CreateUser = ({
           <div className="w-full p-3.5">
             <label
               htmlFor="role"
-              className="block mb-2 text-base text-textDarkColor font-bold"
+              className="block mb-2 text-base text-black-500 font-bold"
             >
               Choose Role
             </label>
             <select
               id="role"
-              className="block w-full p-2 h-14 bg-backgroundColor border border-borderColorLight focus:bg-white focus:border-borderColorLight text-md rounded-md  focus:outline-none disabled:bg-backgroundColor2"
+              className="block w-full p-2 h-14 bg-background_color border border-border_light focus:bg-white focus:border-border_light text-md rounded-md  focus:outline-none disabled:bg-background_color2"
               onChange={handleInputChange}
             >
               <option value="officer">Officer</option>

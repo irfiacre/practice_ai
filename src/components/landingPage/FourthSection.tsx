@@ -53,7 +53,7 @@ const FourthSection = () => {
   return (
     <section className="px-36 py-10 align-middle space-y-10 bg-white max-md:px-5">
       <div className="space-y-5 text-center">
-        <span className="text-textDarkColor text-5xl font-normal max-md:text-3xl">
+        <span className="text-black-500 text-5xl font-normal max-md:text-3xl">
           Testimonies
         </span>
       </div>
@@ -79,7 +79,7 @@ const FourthSection = () => {
             <div className="flex flex-row items-center justify-start gap-10 max-md:flex-wrap">
               <div className="w-full">
                 <Image
-                  className="rounded-md w-80 bg-textLightColor max-md:w-50"
+                  className="rounded-md w-80 bg-text_light max-md:w-50"
                   loader={() => testimony.image}
                   src={testimony.image}
                   alt={`${testimony.name}`}
@@ -89,11 +89,11 @@ const FourthSection = () => {
                 />
               </div>
               <div className="space-y-5">
-                <p className="text-textDarkColor max-md:text-justify">
+                <p className="text-black-500 max-md:text-justify">
                   {testimony.text}
                 </p>
                 <p className="text-primary text-2xl">{testimony.name}</p>
-                <p className="text-textLightColor text-sm">
+                <p className="text-text_light text-sm">
                   Joined since in 2023
                 </p>
               </div>

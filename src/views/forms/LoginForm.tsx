@@ -67,7 +67,7 @@ const LoginForm = ({
       {loginError && (
         <p className="mt-2 text-red-500 text-center text-base">{loginError}</p>
       )}
-      <p className="py-2 text-textLightColor text-sm text-center hover:cursor-pointer hover:text-primary">
+      <p className="py-2 text-text_light text-sm text-center hover:cursor-pointer hover:text-primary">
         Forgot Password?
       </p>
       <div>

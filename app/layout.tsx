@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={poppins.className}
-        style={{ backgroundColor: primaryColorBg }}
+        style={{ background_color: primaryColorBg }}
       >
         {children}
       </body>

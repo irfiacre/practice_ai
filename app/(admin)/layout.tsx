@@ -32,11 +32,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={poppins.className}
-        style={{ backgroundColor: primaryColorBg }}
+        style={{ background_color: primaryColorBg }}
       >
-        {!user ? (
-          children
-        ) : (
+      
           <div className="flex flex-row">
             <div className={`${isActive ? "w-3/4" : "md:w-2/6"}`}>
               <button
@@ -61,7 +59,7 @@ export default function RootLayout({
               </button>
               <div
                 className={`w-full ${
-                  isActive ? "fixed bg-backgroundColor" : "max-md:hidden"
+                  isActive ? "fixed bg-background_color" : "max-md:hidden"
                 }`}
               >
                 <Sidebar />
@@ -70,13 +68,13 @@ export default function RootLayout({
 
             <main className="w-full p-6 mt-8">
               <div className="">
-                <TopNav user={user} title="Overview" />
+                <TopNav title="Overview" />
                 <ToastContainer />
               </div>
               <div>{children}</div>
             </main>
           </div>
-        )}
+ 
       </body>
     </html>
   );

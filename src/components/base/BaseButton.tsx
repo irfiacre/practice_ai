@@ -13,7 +13,7 @@ const LoginButton = ({
       <button
         type="submit"
         onClick={handleSubmit}
-        className="w-full h-16 text-white bg-primary hover:bg-primaryDark focus:outline-none  font-medium rounded-md text-md text-center py-3 disabled:bg-borderColorLight"
+        className="w-full h-16 text-white bg-primary hover:bg-primaryDark focus:outline-none  font-medium rounded-md text-md text-center py-3 disabled:bg-border_light"
         disabled={loading}
       >
         {loading ? (

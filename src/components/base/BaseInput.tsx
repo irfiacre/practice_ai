@@ -30,7 +30,7 @@ const BaseInput = ({
       <label
         htmlFor={inputID}
         className={`block mb-2 ${
-          error ? "text-red-500" : "text-textDarkColor"
+          error ? "text-red-500" : ""
         } font-bold`}
       >
         {label}
@@ -41,8 +41,8 @@ const BaseInput = ({
         className={`block w-full p-2 h-14 ${
           error
             ? "bg-red-50 border border-red-500 text-red-900"
-            : "bg-backgroundColor border border-borderColorLight focus:bg-white focus:border-borderColorLight"
-        } text-md rounded-md  focus:outline-none disabled:bg-backgroundColor2`}
+            : "bg-background_color border border-border_light focus:bg-white focus:border-border_light"
+        } text-md rounded-md  focus:outline-none disabled:bg-background_color2`}
         placeholder={`Enter ${placeholder || ""}`}
         required={required || true}
         value={value}

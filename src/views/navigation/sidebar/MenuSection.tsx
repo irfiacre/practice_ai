@@ -11,30 +11,28 @@ export const MenuItem = ({ content }: { content: any }) => {
   return (
     <Link href={`/${content.url}`} scroll={false}>
       <div
-        className={`py-4 px-3 mx-3 flex flex-row justify-start items-center gap-4 ${
-          active
-            ? "bg-primary rounded-xl"
-            : " hover:bg-menuIconBackground hover:rounded-xl"
+        className={`py-4 px-3 flex flex-row justify-start items-center gap-4 ${
+          active ? "bg-white rounded-xl" : " hover:bg-white hover:rounded-xl text-white hover:text-sidebar_background"
         }`}
       >
-        <div
-          className={`h-10 w-10 flex items-center justify-center rounded-full  ${
-            active ? "bg-primary" : "bg-menuIconBackground"
-          }`}
-        >
+        <div className="h-10 w-10 flex items-center justify-center rounded-full bg-white">
           <Icon
             icon={content.icon}
             fontSize={active ? 25 : 20}
-            className={active ? "text-white" : ""}
+            className="text-sidebar_background"
           />
         </div>
-        <div>
-          <p className={`text-lg mb-1 ${active ? "text-white" : ""}`}>
+        <div className="">
+          <p
+            className={`text-lg mb-1 ${
+              active ? "text-sidebar_background" : ""
+            }`}
+          >
             {content.title}
           </p>
           <p
-            className={`text-sm  ${
-              active ? "text-white" : "text-borderColorLight"
+            className={`text-sm ${
+              active ? "text-sidebar_background/70" : "text-border_light"
             }`}
           >
             {content.subtitle}
@@ -53,8 +51,8 @@ const MenuSection = ({
   menuItems: Array<any>;
 }) => {
   return (
-    <div className=" ml-4">
-      <p className="text-textLightColor text-xl">{title}</p>
+    <div className="">
+      <p className="text-border_light text-xl">{title}</p>
       {menuItems.map((item) => (
         <MenuItem key={item.title} content={item} />
       ))}

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 const LandingPage = () => {
   return (
-    <div className="bg-backgroundColor">
+    <div className="bg-background_color">
       <DashboardPage />
     </div>
   );

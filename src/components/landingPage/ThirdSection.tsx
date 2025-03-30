@@ -13,15 +13,15 @@ const ThirdSection = () => {
     },
   ];
   return (
-    <section className="px-36 py-16 flex flex-row items-center  justify-between bg-backgroundColor3/10 max-md:px-5 max-md:flex-wrap max-md:space-y-10">
+    <section className="px-36 py-16 flex flex-row items-center  justify-between bg-background_color3/10 max-md:px-5 max-md:flex-wrap max-md:space-y-10">
       <div>
-        <p className="text-textDarkColor text-4xl font-medium max-md:text-3xl">
+        <p className="text-black-500 text-4xl font-medium max-md:text-3xl">
           Helping a local
         </p>
         <p className="text-primary text-4xl font-medium max-md:text-3xl">
           Industry reinvent itself
         </p>
-        <p className="text-textLightColor pt-5">
+        <p className="text-text_light pt-5">
           We reached here with our hard work and dedication!
         </p>
       </div>
@@ -36,10 +36,10 @@ const ThirdSection = () => {
               />
             </div>
             <div>
-              <p className="text-textDarkColor text-2xl font-bold max-md:text-xl">
+              <p className="text-black-500 text-2xl font-bold max-md:text-xl">
                 {item.amount}
               </p>
-              <p className="text-textLightColor">{item.title}</p>
+              <p className="text-text_light">{item.title}</p>
             </div>
           </div>
         ))}
