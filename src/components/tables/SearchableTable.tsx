@@ -1,24 +1,42 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useState } from "react";
 import BaseCard from "../base/BaseCard";
 import SearchableInput from "../inputs/SearchInput";
-import Image from "next/image";
 import Pagination from "./Pagination";
 import Link from "next/link";
+import BaseModel from "../base/BaseModel";
+import CreateOnboardingPlan from "@/src/views/forms/CreateOnboardingPlan";
+import { Icon } from "@iconify/react";
+import { generateId } from "@/util/helpers";
+import {
+  createDocEntry,
+  deleteDocEntryById,
+  updateDocEntry,
+} from "@/services/firebase/helpers";
+import { PLANS_COLLECTION } from "@/constants/collectionNames";
+import { toast } from "react-toastify";
 
-const SearchableTable = ({ data }: { data: Array<any> }) => {
+interface SearchableTableProps {
+  data: Array<any>;
+}
+
+const SearchableTable = ({ data }: SearchableTableProps) => {
   const [searchText, setSearchText] = useState("");
   const [tableData, updateTableData] = useState(data);
+  const [openModel, setOpenCourseModel] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [editValues, setEditValues] = useState({
+    title: "",
+    description: "",
+    id: "",
+  });
 
   useEffect(() => {
     updateTableData(
       data.filter((item) =>
         searchText.trim() === ""
           ? item
-          : `${item.applicant.firstName} ${item.applicant.lastName}`
-              .toLowerCase()
-              .includes(searchText.trim().toLowerCase())
+          : item.title.toLowerCase().includes(searchText.trim().toLowerCase())
       )
     );
   }, [data, searchText]);
@@ -28,64 +46,152 @@ const SearchableTable = ({ data }: { data: Array<any> }) => {
     setSearchText(e.target.value);
   };
 
+  const handleCreatePlan = async (planObj: "create" | any) => {
+    if (planObj === "create") {
+      setOpenCourseModel(true);
+    } else {
+      setLoading(true);
+      const planFormat = editValues.title
+        ? {
+            ...editValues,
+            title: planObj.title,
+            description: planObj.description,
+          }
+        : {
+            ...planObj,
+            id: generateId(planObj.title),
+            status: "pending",
+            createdAt: new Date().toISOString(),
+            courses: [],
+          };
+
+      const planAdded = editValues.title
+        ? await updateDocEntry(PLANS_COLLECTION, planFormat.id, planFormat)
+        : await createDocEntry(PLANS_COLLECTION, planFormat);
+      if (planAdded) {
+        toast.success("Course Created", {
+          hideProgressBar: true,
+          closeOnClick: true,
+          autoClose: 3000,
+        });
+        handleCloseModel();
+      }
+      setLoading(false);
+    }
+  };
+
+  const handleCloseModel = () => {
+    setOpenCourseModel(false);
+    setEditValues({
+      title: "",
+      description: "",
+      id: "",
+    });
+  };
+
+  const handleEditPlan = (plan: any) => {
+    setOpenCourseModel(true);
+    setEditValues({
+      title: plan.title,
+      description: plan.description,
+      id: plan.id,
+    });
+  };
+
+  const handleDelete = async (plan: any) => {
+    const deleted = await deleteDocEntryById(PLANS_COLLECTION, plan.id);
+    if (deleted) {
+      toast.success(`${plan.title} is Deleted`, {
+        hideProgressBar: true,
+        closeOnClick: true,
+        autoClose: 3000,
+      });
+    }
+  };
+
   return (
-    <div className="px-10 py-5">
-      <div className="py-5">
-        <SearchableInput
-          inputID="sidebarSearch"
-          value={searchText}
-          onInputChange={handleSidebarSearch}
-          inputClassName="rounded-md"
-        />
+    <BaseCard className="px-10 py-5">
+      <SearchableInput
+        inputID="sidebarSearch"
+        value={searchText}
+        onInputChange={handleSidebarSearch}
+        inputClassName="rounded-xl bg-white"
+      />
+      {openModel && (
+        <BaseModel
+          title={
+            editValues.title ? `Edit (${editValues.title})` : "Create Plan"
+          }
+          onClose={handleCloseModel}
+          containerStyle="w-4/5 p-10"
+        >
+          <div className="">
+            <CreateOnboardingPlan
+              onFormSubmit={handleCreatePlan}
+              defaultDescription={editValues.description}
+              defaultTitle={editValues.title}
+              loading={loading}
+            />
+          </div>
+        </BaseModel>
+      )}
+      <div className="py-2.5 text-textLightColor text-base font-semibold flex flex-row align-middle items-center px-1.5 gap-3.5 cursor-pointer bg-backgroundColor">
+        <span className="w-full">Title</span>
+        <span className="w-2/4">Courses</span>
+        <span className="w-full">Description</span>
+        <span className="w-2/4">Actions</span>
       </div>
+      <hr />
+      <div>
+        {tableData.map((item) => {
+          console.log("========", item.onboardingPlan);
 
-      <div className="space-y-2">
-        {tableData.map((item) => (
-          <BaseCard key={item.id}>
-            <Link href={`/applications/${item.id}`}>
-              <div className="flex flex-row align-middle items-center py-2.5 px-1.5 gap-3.5 cursor-pointer hover:bg-primary_3">
-                <div className="overflow-hidden">
-                  <img
-                    src={item.baseInformation.passportPhotoUrl}
-                    alt="Thumbnail"
-                    height={"80px"}
-                    width={"80px"}
-                    className="rounded-full cursor-pointer h-20 w-20 object-cover"
-                  />
+          return (
+            <div key={item.applicant}>
+              <div className="flex flex-row align-middle items-center py-2.5 px-1.5 gap-1.5 cursor-pointer hover:bg-backgroundColor">
+                <div className="w-full">
+                  <Link href={`/plans/${item.id}`}>
+                    <span>{item.title}</span>
+                  </Link>
                 </div>
-                <div className="text-sm">
-                  <div className="flex flex-row align-middle items-center gap-2 py-1.5">
-                    <span className="font-semibold">
-                      {item.applicant.firstName + " " + item.applicant.lastName}
-                    </span>
-
-                    <span
-                      className={`font-light text-xs ${
-                        item.status === "approved"
-                          ? "text-successGreen"
-                          : item.status === "rejected"
-                          ? "text-red-600"
-                          : "text-text_light"
-                      }`}
-                    >
-                      ({item.status})
-                    </span>
-                  </div>
-                  <span className="text-text_light font-light">
-                    National ID: {item.baseInformation.nationalId}
-                  </span>
-                  <br />
-                  <span className="text-text_light font-light">
-                    Driver License: {item.baseInformation.driverLicenseId}
-                  </span>
+                <div className="w-2/4">
+                  <Link href={`/plans/${item.id}`}>
+                    <span>{item.onboardingPlan?.courses.length || 0}</span>
+                  </Link>
                 </div>
-                <div></div>
+                <div className="text-sm w-full">
+                  <Link href={`/plans/${item.id}`}>
+                    <span className="text-textLightColor font-light">
+                      {item.description.substring(0, 50)}
+                    </span>
+                  </Link>
+                </div>
+                <div className="w-2/4">
+                  <button
+                    className="inline-flex self-center items-center p-2 text-sm font-medium text-center text-textLightColor bg-inherit rounded-full hover:bg-textDarkColor hover:text-white focus:outline-none"
+                    type="button"
+                    onClick={() => handleEditPlan(item)}
+                  >
+                    <Icon icon="tabler:edit" fontSize={20} />
+                  </button>{" "}
+                  <button
+                    className="inline-flex self-center items-center p-2 text-sm font-medium text-center text-red-600 bg-inherit rounded-full hover:bg-red-600 hover:text-white focus:outline-none"
+                    type="button"
+                    onClick={() => handleDelete(item)}
+                  >
+                    <Icon icon="mdi:delete" fontSize={20} />
+                  </button>
+                </div>
               </div>
-            </Link>
-          </BaseCard>
-        ))}
+              <hr />
+            </div>
+          );
+        })}
       </div>
-    </div>
+      <div className="w-full py-10">
+        <Pagination prevPage={1} currentPage={1} nextPage={3} totalPages={1} />
+      </div>
+    </BaseCard>
   );
 };
 

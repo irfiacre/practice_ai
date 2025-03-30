@@ -1,9 +1,10 @@
-"use client"
+"use client";
 import { getAllStaff } from "@/services/firebase/authentication";
 import AnalyticsCard from "@/src/components/cards/AnalyticsCard";
 import BaseCard from "@/src/components/base/BaseCard";
 import React, { useEffect, useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
+import SearchableTable from "@/src/components/tables/SearchableTable";
 
 const DashboardPage = () => {
   const moreStatistics = [
@@ -23,7 +24,7 @@ const DashboardPage = () => {
   const [loading, setLoading] = useState(false);
 
   const initialFindApplications = async () => {
-    return []
+    return [];
   };
 
   useEffect(() => {
@@ -72,6 +73,7 @@ const DashboardPage = () => {
             <AnalyticsCard title={item.title} count={item.count} />
           </div>
         ))}
+          <SearchableTable data={[]} />
       </div>
     </div>
   );
