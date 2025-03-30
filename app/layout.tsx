@@ -1,8 +1,6 @@
-"use client";
 import React from "react";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { primaryColorBg } from "@/constants/colors";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,7 +16,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={poppins.className}
-        style={{ background_color: primaryColorBg }}
       >
         {children}
       </body>
