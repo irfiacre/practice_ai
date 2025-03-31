@@ -25,3 +25,8 @@ export const generateFileName = (text?: string): string => {
   const baseText = text ? text.split(" ").join("_").toLowerCase() : "";
   return `${new Date().getTime()}-${baseText}`;
 };
+
+
+export const startTimer = (minutes: number) => {
+  
+}
