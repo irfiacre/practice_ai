@@ -1,0 +1,659 @@
+[
+  {
+    "id": "xx0yy1",
+    "title": "TOEFL Mock Test 1",
+    "description": "Full Mock Test",
+    "is_ai_generated": true,
+    "taken": 0,
+    "likeness": 50,
+    "test": {
+      "Reading": [
+        {
+          "passage": "The evolution of the Earth's climate system has been a subject of intense scientific scrutiny for decades. Understanding the intricate interplay of natural and anthropogenic factors that influence global temperatures and weather patterns is crucial for predicting future climate scenarios. Over millions of years, the Earth's climate has undergone significant shifts, driven by phenomena such as variations in solar radiation, volcanic activity, and changes in the Earth's orbit. These natural processes have led to periods of both warming and cooling, shaping the planet's ecosystems and influencing the distribution of life. However, the current era is marked by an unprecedented rate of climate change, primarily attributed to human activities. The burning of fossil fuels, deforestation, and industrial processes have significantly increased the concentration of greenhouse gases in the atmosphere, trapping heat and causing a rise in global temperatures. This phenomenon, known as the greenhouse effect, has far-reaching consequences, including sea-level rise, extreme weather events, and disruptions to ecosystems. Scientific research has provided compelling evidence of the link between human activities and climate change. Ice core data, for instance, reveals a sharp increase in atmospheric carbon dioxide levels since the Industrial Revolution, coinciding with the rapid expansion of industrialization and fossil fuel consumption. Climate models, sophisticated computer simulations that incorporate various climate factors, consistently project significant warming trends if greenhouse gas emissions continue unabated. The impacts of climate change are already being felt across the globe, with rising sea levels threatening coastal communities, more frequent and intense heatwaves causing health problems, and changes in precipitation patterns leading to droughts and floods. Addressing this challenge requires a concerted global effort to reduce greenhouse gas emissions and transition to sustainable energy sources. International agreements, such as the Paris Agreement, aim to limit global warming by setting targets for emission reductions and promoting renewable energy technologies. However, the implementation of these agreements faces numerous challenges, including political and economic obstacles. Furthermore, adapting to the inevitable impacts of climate change is also essential. This involves developing strategies to protect vulnerable communities, enhance infrastructure resilience, and conserve natural resources. The future of the Earth's climate hinges on the choices we make today. The scientific community continues to emphasize the urgency of action, highlighting the potential for irreversible changes if we fail to mitigate greenhouse gas emissions. The preservation of our planet's climate system is not merely an environmental concern but a fundamental issue of human survival and well-being. The challenge lies in balancing economic development with environmental sustainability, ensuring that future generations inherit a planet capable of supporting a thriving civilization.",
+          "questions": [
+            {
+              "question": "What is the primary focus of the passage?",
+              "options": [
+                "The history of volcanic activity.",
+                "The impact of human activities on climate change.",
+                "The benefits of fossil fuels.",
+                "The role of solar radiation in weather patterns."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the greenhouse effect?",
+              "options": [
+                "The cooling of the Earth's atmosphere.",
+                "The trapping of heat by greenhouse gases.",
+                "The process of photosynthesis.",
+                "The formation of clouds."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What evidence supports the link between human activities and climate change?",
+              "options": [
+                "Ancient cave paintings.",
+                "Ice core data showing increased CO2 levels.",
+                "The migration patterns of birds.",
+                "The formation of the Grand Canyon."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What are some of the consequences of climate change mentioned in the passage?",
+              "options": [
+                "Increased biodiversity and ecosystem growth.",
+                "Rising sea levels and extreme weather events.",
+                "A decrease in global temperatures.",
+                "The formation of new mountain ranges."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the goal of the Paris Agreement?",
+              "options": [
+                "To promote the use of fossil fuels.",
+                "To limit global warming through emission reductions.",
+                "To increase industrial pollution.",
+                "To expand deforestation."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is required to address the challenges of climate change?",
+              "options": [
+                "Increased reliance on non-renewable resources.",
+                "A global effort to reduce greenhouse gas emissions and adapt.",
+                "The abandonment of scientific research.",
+                "The privatization of natural resources."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is emphasized by the scientific community regarding climate change?",
+              "options": [
+                "The lack of urgency in addressing the issue.",
+                "The potential for irreversible changes if emissions are not mitigated.",
+                "The benefits of increased industrial pollution.",
+                "The insignificance of human impact on the environment."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the primary driver of the current unprecedented rate of climate change?",
+              "options": [
+                "Solar radiation variations.",
+                "Human activities such as burning fossil fuels.",
+                "Volcanic activity.",
+                "Changes in Earth's orbit."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What are climate models used for?",
+              "options": [
+                "To predict future weather patterns only.",
+                "To simulate and project future climate scenarios.",
+                "To measure the speed of wind currents.",
+                "To calculate astronomical distances."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is a key challenge in implementing international climate agreements?",
+              "options": [
+                "The abundance of natural resources.",
+                "Political and economic obstacles.",
+                "The lack of scientific data.",
+                "The absence of global communication networks."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What does adapting to climate change involve?",
+              "options": [
+                "Ignoring the impacts on vulnerable communities.",
+                "Developing strategies to protect communities and enhance infrastructure.",
+                "Increasing the use of fossil fuels.",
+                "Reducing efforts to conserve natural resources."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the fundamental issue highlighted in the passage regarding climate change?",
+              "options": [
+                "A purely economic concern.",
+                "A matter of human survival and well-being.",
+                "A temporary weather phenomenon.",
+                "A scientific curiosity with no practical implications."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is crucial for ensuring a sustainable future?",
+              "options": [
+                "Ignoring environmental concerns.",
+                "Balancing economic development with environmental sustainability.",
+                "Prioritizing economic growth at any environmental cost.",
+                "Depleting natural resources for immediate gains."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What historical period saw a sharp increase in atmospheric carbon dioxide levels?",
+              "options": [
+                "The Stone Age.",
+                "The Industrial Revolution.",
+                "The Renaissance.",
+                "The Medieval Era."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "How do natural processes influence the Earth's climate?",
+              "options": [
+                "By exclusively causing warming trends.",
+                "By leading to periods of both warming and cooling.",
+                "By having no impact on global temperatures.",
+                "By only causing cooling trends."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What are some examples of natural processes that affect climate?",
+              "options": [
+                "Industrial pollution and deforestation.",
+                "Variations in solar radiation and volcanic activity.",
+                "Urbanization and population growth.",
+                "Technological advancements."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the primary concern regarding the current rate of climate change?",
+              "options": [
+                "Its slow pace.",
+                "Its unprecedented speed.",
+                "Its lack of impact on ecosystems.",
+                "Its predictability."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "How does deforestation contribute to climate change?",
+              "options": [
+                "By increasing the production of oxygen.",
+                "By reducing the absorption of carbon dioxide.",
+                "By cooling the atmosphere.",
+                "By enhancing biodiversity."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What do ice core data reveal about atmospheric carbon dioxide levels?",
+              "options": [
+                "A decrease over time.",
+                "A sharp increase since the Industrial Revolution.",
+                "A stable level throughout history.",
+                "A correlation with volcanic eruptions only."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the purpose of enhancing infrastructure resilience?",
+              "options": [
+                "To increase vulnerability to natural disasters.",
+                "To protect against the impacts of climate change.",
+                "To promote the use of fossil fuels.",
+                "To ignore the effects of sea-level rise."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is a major consequence of rising sea levels?",
+              "options": [
+                "Increased landmass.",
+                "Threat to coastal communities.",
+                "Formation of new islands.",
+                "Expansion of deserts."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What are some health problems caused by more frequent heatwaves?",
+              "options": [
+                "Improved cardiovascular health.",
+                "Heatstroke and dehydration.",
+                "Enhanced immune system function.",
+                "Increased bone density."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "How do changes in precipitation patterns affect the environment?",
+              "options": [
+                "By increasing the availability of freshwater.",
+                "By leading to droughts and floods.",
+                "By stabilizing ecosystem conditions.",
+                "By reducing soil erosion."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the role of renewable energy technologies in addressing climate change?",
+              "options": [
+                "To increase greenhouse gas emissions.",
+                "To reduce reliance on fossil fuels.",
+                "To promote deforestation.",
+                "To enhance industrial pollution."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is a key factor in balancing economic development with environmental sustainability?",
+              "options": [
+                "Ignoring environmental concerns.",
+                "Prioritizing economic growth at any cost.",
+                "Ensuring that future generations inherit a healthy planet.",
+                "Depleting natural resources rapidly."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the scientific community's stance on the urgency of climate action?",
+              "options": [
+                "There is no need for immediate action.",
+                "Action is urgently needed to prevent irreversible changes.",
+                "The effects of climate change are negligible.",
+                "Climate change is a natural phenomenon with no human influence."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the primary focus of the discussion on sustainable energy sources?",
+              "options": [
+                "Increasing the use of non-renewable resources.",
+                "Transitioning away from fossil fuels.",
+                "Expanding industrial pollution.",
+                "Promoting deforestation for energy production."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the main challenge in protecting vulnerable communities from climate change?",
+              "options": [
+                "The lack of scientific data.",
+                "Developing and implementing effective adaptation strategies.",
+                "The absence of global communication networks.",
+                "The abundance of natural resources."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the ultimate goal of conserving natural resources in the context of climate change?",
+              "options": [
+                "To exploit them for immediate economic gains.",
+                "To ensure their availability for future generations.",
+                "To accelerate their depletion.",
+                "To ignore their importance in ecosystem stability."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the primary factor that has led to a significant increase in atmospheric greenhouse gases?",
+              "options": [
+                "Natural geological processes.",
+                "The burning of fossil fuels.",
+                "Solar radiation variations.",
+                "Changes in Earth's orbit."
+              ],
+              "answer": 1
+            }
+          ]
+        }
+      ],
+      "Listening": [
+        {
+          "audio_description": "A lecture on marine ecosystems and their challenges.",
+          "transcript": "Today, we'll explore the fascinating world of marine ecosystems. These diverse environments, ranging from coral reefs to deep-sea trenches, are vital for the planet's health. However, they face numerous challenges, including pollution, overfishing, and climate change. We'll delve into the intricate relationships between marine organisms and their habitats, examining how these factors disrupt the delicate balance of these ecosystems. Pollution, particularly plastic waste, poses a significant threat, as it can harm marine life through ingestion and entanglement. Overfishing depletes fish populations, leading to ecological imbalances and economic losses. Climate change, with its rising sea levels and ocean acidification, further exacerbates these problems, impacting coral reefs and other vulnerable habitats. We'll also discuss conservation efforts aimed at protecting these vital ecosystems.",
+          "questions": [
+            {
+              "question": "What is the main topic of the lecture?",
+              "options": [
+                "Terrestrial ecosystems.",
+                "Marine ecosystems and their challenges.",
+                "Atmospheric pollution.",
+                "Freshwater ecosystems."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What are some of the challenges faced by marine ecosystems?",
+              "options": [
+                "Abundance of resources and stable conditions.",
+                "Pollution, overfishing, and climate change.",
+                "Lack of biodiversity.",
+                "Minimal human impact."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "How does plastic waste harm marine life?",
+              "options": [
+                "By enhancing their reproductive capabilities.",
+                "Through ingestion and entanglement.",
+                "By improving water clarity.",
+                "By providing a food source."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the impact of overfishing on fish populations?",
+              "options": [
+                "It leads to an increase in fish populations.",
+                "It depletes fish populations and causes ecological imbalances.",
+                "It has no significant impact.",
+                "It improves the health of marine ecosystems."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "How does climate change affect coral reefs?",
+              "options": [
+                "By promoting their growth and expansion.",
+                "By causing ocean acidification and impacting their habitats.",
+                "By having no effect on them.",
+                "By improving their resilience."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's focus regarding conservation efforts?",
+              "options": [
+                "Ignoring the need for protection.",
+                "Discussing efforts to protect marine ecosystems.",
+                "Promoting increased pollution.",
+                "Encouraging overfishing."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What are marine ecosystems vital for?",
+              "options": [
+                "The planet's health.",
+                "Terrestrial agriculture.",
+                "Atmospheric stability only.",
+                "Industrial development exclusively."
+              ],
+              "answer": 0
+            },
+            {
+              "question": "What is a significant consequence of ocean acidification?",
+              "options": [
+                "Increased marine biodiversity.",
+                "Damage to coral reefs and other habitats.",
+                "Improved water quality.",
+                "Enhanced marine life resilience."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the impact of pollution on the delicate balance of marine ecosystems?",
+              "options": [
+                "It stabilizes the ecosystems.",
+                "It disrupts the balance.",
+                "It enhances biodiversity.",
+                "It has no effect."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is a major economic consequence of overfishing?",
+              "options": [
+                "Increased profits for the fishing industry.",
+                "Economic losses.",
+                "Enhanced marine tourism.",
+                "Improved coastal infrastructure."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What are some examples of diverse marine environments?",
+              "options": [
+                "Deserts and forests.",
+                "Coral reefs and deep-sea trenches.",
+                "Grasslands and mountains.",
+                "Urban cities and industrial parks."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's perspective on the relationship between marine organisms and their habitats?",
+              "options": [
+                "They are independent of each other.",
+                "They have intricate relationships.",
+                "There is no significant interaction.",
+                "The relationships are harmful."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the primary focus regarding the impact of plastic waste?",
+              "options": [
+                "Its aesthetic appeal.",
+                "Its harm to marine life.",
+                "Its economic benefits.",
+                "Its role in enhancing marine biodiversity."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the main concern regarding the depletion of fish populations?",
+              "options": [
+                "Increased fish sizes.",
+                "Ecological imbalances.",
+                "Enhanced marine life resilience.",
+                "Improved water quality."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's perspective on the role of climate change in marine ecosystems?",
+              "options": [
+                "It has a positive impact.",
+                "It exacerbates existing problems.",
+                "It has no effect.",
+                "It improves ecosystem stability."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the goal of conservation efforts discussed in the lecture?",
+              "options": [
+                "To promote industrial pollution.",
+                "To protect vital marine ecosystems.",
+                "To encourage overfishing.",
+                "To ignore the effects of climate change."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the significance of the lecture's focus on the delicate balance of marine ecosystems?",
+              "options": [
+                "It highlights their resilience to human impact.",
+                "It emphasizes their vulnerability to disruptions.",
+                "It promotes the exploitation of marine resources.",
+                "It minimizes the importance of conservation efforts."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's view on the economic impact of overfishing?",
+              "options": [
+                "It leads to increased profits for the fishing industry.",
+                "It causes significant economic losses.",
+                "It has no economic consequences.",
+                "It enhances marine tourism."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's perspective on the relationship between pollution and marine life?",
+              "options": [
+                "Pollution enhances marine life resilience.",
+                "Pollution poses a significant threat to marine life.",
+                "Pollution has no effect on marine life.",
+                "Pollution improves water quality."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's main concern regarding the impact of climate change on coral reefs?",
+              "options": [
+                "Their improved growth and expansion.",
+                "Their vulnerability to ocean acidification.",
+                "Their enhanced resilience.",
+                "Their increased biodiversity."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's perspective on the role of conservation efforts in protecting marine ecosystems?",
+              "options": [
+                "They are unnecessary.",
+                "They are essential for protection.",
+                "They promote industrial pollution.",
+                "They encourage overfishing."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's view on the overall health of marine ecosystems?",
+              "options": [
+                "They are thriving without human intervention.",
+                "They are facing numerous challenges.",
+                "They are improving due to pollution.",
+                "They are unaffected by climate change."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's perspective on the impact of plastic waste on marine life?",
+              "options": [
+                "It provides a food source.",
+                "It harms them through ingestion and entanglement.",
+                "It improves water clarity.",
+                "It enhances their reproductive capabilities."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's main concern regarding the depletion of fish populations due to overfishing?",
+              "options": [
+                "Increased fish sizes.",
+                "Ecological imbalances and economic losses.",
+                "Enhanced marine life resilience.",
+                "Improved water quality."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's view on the relationship between climate change and ocean acidification?",
+              "options": [
+                "They are unrelated.",
+                "Climate change contributes to ocean acidification.",
+                "Ocean acidification mitigates climate change.",
+                "They have opposing effects."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's perspective on the importance of marine ecosystems for the planet?",
+              "options": [
+                "They are insignificant.",
+                "They are vital for the planet's health.",
+                "They are detrimental to other ecosystems.",
+                "They have no impact on the environment."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's main concern regarding the impact of pollution on the delicate balance of marine ecosystems?",
+              "options": [
+                "It stabilizes the ecosystems.",
+                "It disrupts the ecosystems.",
+                "It enhances biodiversity.",
+                "It has no effect."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's view on the economic consequences of overfishing?",
+              "options": [
+                "It leads to increased profits.",
+                "It causes significant economic losses.",
+                "It has no economic impact.",
+                "It enhances marine tourism."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's perspective on the diverse environments within marine ecosystems?",
+              "options": [
+                "They are uniform and unchanging.",
+                "They range from coral reefs to deep-sea trenches.",
+                "They are limited to coastal regions.",
+                "They are primarily freshwater ecosystems."
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the lecture's main concern regarding the impact of climate change on vulnerable marine habitats?",
+              "options": [
+                "Their enhanced resilience.",
+                "Their vulnerability to rising sea levels and ocean acidification.",
+                "Their improved growth and expansion.",
+                "Their increased biodiversity."
+              ],
+              "answer": 1
+            }
+          ]
+        }
+      ],
+      "Speaking": [
+        {
+          "task_1": {
+            "prompt": "Describe a time when you had to learn a new skill quickly. Explain the situation and how you managed to learn it."
+          },
+          "task_2": {
+            "reading_passage": "University policy: The university is considering implementing a mandatory volunteer program for all students.",
+            "listening_passage": "A student expresses their opinion, stating that it would provide valuable experience but could be time-consuming and stressful.",
+            "prompt": "Summarize the student's opinion and explain how it relates to the university's policy."
+          },
+          "task_3": {
+            "reading_passage": "Article about the benefits of online learning.",
+            "listening_passage": "A professor discusses the challenges of online learning, such as the lack of face-to-face interaction and potential technical issues.",
+            "prompt": "Explain the professor's point of view and how it contrasts with the information in the article."
+          },
+          "task_4": {
+            "prompt": "Some people prefer to live in a small town, while others prefer to live in a big city. Which do you prefer and why? Use specific reasons and examples to support your opinion."
+          }
+        }
+      ],
+      "Writing": [
+        {
+          "integrated_task": {
+            "reading_passage": "The article discusses the advantages of using public transportation in urban areas, such as reducing traffic congestion and air pollution.",
+            "listening_passage": "A lecture presents the challenges of relying on public transportation, including its unreliability and limited accessibility in some areas.",
+            "prompt": "Summarize the main points of the lecture and explain how they relate to the information in the reading passage."
+          },
+          "independent_task": {
+            "prompt": "Do you agree or disagree with the following statement? Technology has made people less social. Use specific reasons and examples to support your answer."
+          }
+        }
+      ]
+    }
+  }
+]

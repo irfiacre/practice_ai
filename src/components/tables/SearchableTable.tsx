@@ -15,6 +15,7 @@ import {
 } from "@/services/firebase/helpers";
 import { PLANS_COLLECTION } from "@/constants/collectionNames";
 import { toast } from "react-toastify";
+import PillComponent from '../PillComponent';
 
 interface SearchableTableProps {
   data: Array<any>;
@@ -117,6 +118,7 @@ const SearchableTable = ({ data }: SearchableTableProps) => {
         onInputChange={handleSidebarSearch}
         inputClassName="rounded-xl bg-white"
       />
+      <br />
       {openModel && (
         <BaseModel
           title={
@@ -135,58 +137,36 @@ const SearchableTable = ({ data }: SearchableTableProps) => {
           </div>
         </BaseModel>
       )}
-      <div className="py-2.5 text-textLightColor text-base font-semibold flex flex-row align-middle items-center px-1.5 gap-3.5 cursor-pointer bg-backgroundColor">
+      <div className="py-2.5 text-text_light text-base font-semibold flex flex-row align-middle items-center px-1.5 gap-3.5 cursor-pointer bg-background_color">
         <span className="w-full">Title</span>
-        <span className="w-2/4">Courses</span>
         <span className="w-full">Description</span>
-        <span className="w-2/4">Actions</span>
+        <span className="w-2/4">Taken</span>
       </div>
       <hr />
       <div>
-        {tableData.map((item) => {
-          console.log("========", item.onboardingPlan);
-
-          return (
-            <div key={item.applicant}>
-              <div className="flex flex-row align-middle items-center py-2.5 px-1.5 gap-1.5 cursor-pointer hover:bg-backgroundColor">
-                <div className="w-full">
-                  <Link href={`/plans/${item.id}`}>
-                    <span>{item.title}</span>
-                  </Link>
-                </div>
-                <div className="w-2/4">
-                  <Link href={`/plans/${item.id}`}>
-                    <span>{item.onboardingPlan?.courses.length || 0}</span>
-                  </Link>
-                </div>
-                <div className="text-sm w-full">
-                  <Link href={`/plans/${item.id}`}>
-                    <span className="text-textLightColor font-light">
-                      {item.description.substring(0, 50)}
-                    </span>
-                  </Link>
-                </div>
-                <div className="w-2/4">
-                  <button
-                    className="inline-flex self-center items-center p-2 text-sm font-medium text-center text-textLightColor bg-inherit rounded-full hover:bg-textDarkColor hover:text-white focus:outline-none"
-                    type="button"
-                    onClick={() => handleEditPlan(item)}
-                  >
-                    <Icon icon="tabler:edit" fontSize={20} />
-                  </button>{" "}
-                  <button
-                    className="inline-flex self-center items-center p-2 text-sm font-medium text-center text-red-600 bg-inherit rounded-full hover:bg-red-600 hover:text-white focus:outline-none"
-                    type="button"
-                    onClick={() => handleDelete(item)}
-                  >
-                    <Icon icon="mdi:delete" fontSize={20} />
-                  </button>
-                </div>
+        {tableData.map((item) => (
+          <div key={item.id}>
+            <div className="flex flex-row align-middle items-center py-2.5 px-1.5 gap-1.5 cursor-pointer hover:bg-background_color">
+              <div className="w-full">
+                <Link href={`/tests/${item.id}`}>
+                  <span>{item.title}</span>
+                  <p className="font-medium text-xs text-text_light py-2">{`${item.likeness}% (Toefl likeness)`}</p>
+                </Link>
               </div>
-              <hr />
+              <div className="text-sm w-full">
+                <Link href={`/tests/${item.id}`}>
+                  <span className="text-textLightColor font-light">
+                    {item.description}
+                  </span>
+                </Link>
+              </div>
+              <div className="w-2/4">
+                <span>{item.taken}</span>
+              </div>
             </div>
-          );
-        })}
+            <hr />
+          </div>
+        ))}
       </div>
       <div className="w-full py-10">
         <Pagination prevPage={1} currentPage={1} nextPage={3} totalPages={1} />

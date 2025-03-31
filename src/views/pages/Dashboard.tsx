@@ -3,7 +3,7 @@ import { getAllStaff } from "@/services/firebase/authentication";
 import AnalyticsCard from "@/src/components/cards/AnalyticsCard";
 import BaseCard from "@/src/components/base/BaseCard";
 import React, { useEffect, useState } from "react";
-import Datepicker from "react-tailwindcss-datepicker";
+import testData from "@/constants/tests.json";
 import SearchableTable from "@/src/components/tables/SearchableTable";
 
 const DashboardPage = () => {
@@ -73,7 +73,7 @@ const DashboardPage = () => {
             <AnalyticsCard title={item.title} count={item.count} />
           </div>
         ))}
-          <SearchableTable data={[]} />
+          <SearchableTable data={testData} />
       </div>
     </div>
   );

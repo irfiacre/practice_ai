@@ -10,7 +10,7 @@ const PillComponent = ({
   return (
     <div
       onClick={handleClick}
-      className="border border-primary/50 bg-primary/40 py-2.5 px-5 m-1  rounded-full text-center cursor-pointer hover:bg-primary/20 capitalize"
+      className="w-2/4 border bg-sidebar_background text-white p-1 mt-1 rounded-full text-center cursor-pointer hover:bg-sidebar_background/20 hover:text-sidebar_background capitalize"
     >
       {text}
     </div>
