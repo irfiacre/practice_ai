@@ -15,23 +15,13 @@ export const timerSlice = createSlice({
   name: "timer",
   initialState,
   reducers: {
-    startTimer: (state) => {
-      state.minutes = 0;
-      state.seconds = 0;
-    },
-    stopTimer: (state) => {
-      state.minutes = 0;
-      state.seconds = 0;
-    },
-
-    resetTimer: (state) => {
-      state.minutes = state.seconds;
-      state.seconds = state.seconds;
+    startTimer: (state, action: PayloadAction<number>) => {
+      state.minutes = action.payload;
+      state.seconds = 59;
     },
   },
 });
 
-// Action creators are generated for each case reducer function
-export const { startTimer, stopTimer, resetTimer } = timerSlice.actions;
+export const { startTimer } = timerSlice.actions;
 
 export default timerSlice.reducer;

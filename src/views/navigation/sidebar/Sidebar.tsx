@@ -10,10 +10,10 @@ export const Sidebar = () => {
   const sidebarMenu = {
     dashboard: [
       {
-        title: "Dashboard",
-        subtitle: "Daily analytics",
-        url: "dashboard",
-        icon: "material-symbols:dashboard",
+        title: "Practice",
+        subtitle: "Start Practice",
+        url: "practice",
+        icon: "ph:exam-bold",
       },
     ],
     sections: [
@@ -41,7 +41,7 @@ export const Sidebar = () => {
         url: "writing",
         icon: "clarity:note-solid",
       },
-    ]
+    ],
   };
   const [searchText, setSearchText] = useState("");
 
