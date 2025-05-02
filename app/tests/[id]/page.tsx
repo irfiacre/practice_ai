@@ -20,8 +20,11 @@ const Page = () => {
   console.log("----->", test);
   return (
     <div>
-      <BaseCard className="space-y-5">
-        <h1>Instructions</h1>
+      <BaseCard className="space-y-2 px-10">
+        <h1 className="text-primary text-xl font-semibold text-center mt-5 py-2.5">
+          Instructions
+        </h1>
+        <hr />
         <div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
@@ -49,7 +52,10 @@ const Page = () => {
             sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <BaseButton>Skip</BaseButton>
+        <hr />
+        <div className="py-5 text-center">
+          <BaseButton>Skip (Start test)</BaseButton>
+        </div>
       </BaseCard>
     </div>
   );
