@@ -17,7 +17,7 @@ const Page = () => {
     setTest(test);
     dispatch(startTimer(3));
   }, [id]);
-  console.log("----->", test);
+
   return (
     <div>
       <BaseCard className="space-y-2 px-10">
