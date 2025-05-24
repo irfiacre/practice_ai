@@ -6,8 +6,12 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
-const TestTopNav = () => {
-  //   const params: any = useParams();
+const TestTopNav = ({
+  handleNextBtnClick,
+}: {
+  handleNextBtnClick: () => void;
+}) => {
+  // const params: any = useParams();
   const router = useRouter();
   const [isActive, handleDropdown] = useState(false);
   const [currentTitle, setCurrentTitle] = useState("Overview");
@@ -75,9 +79,7 @@ const TestTopNav = () => {
       <div className="mr-6 flex flex-row gap-3 items-center text-notificationIconColor">
         <div>
           <div className="relative inline-block text-left w-full">
-            <BaseButton
-              // handleClick={() => handleNextClicked()}
-            >
+            <BaseButton handleClick={() => handleNextBtnClick()}>
               Next
             </BaseButton>
           </div>
