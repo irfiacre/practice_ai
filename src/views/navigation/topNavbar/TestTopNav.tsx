@@ -76,7 +76,7 @@ const TestTopNav = () => {
         <div>
           <div className="relative inline-block text-left w-full">
             <BaseButton
-              handleClick={() => handleDropdown((prevState) => !prevState)}
+              // handleClick={() => handleNextClicked()}
             >
               Next
             </BaseButton>

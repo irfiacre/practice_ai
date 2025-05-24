@@ -1,0 +1,1 @@
+export const DEFAULT_INSTRUCTIONS_TIMER = 3;

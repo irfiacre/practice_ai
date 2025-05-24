@@ -3,59 +3,46 @@ import React, { useEffect, useState } from "react";
 import BaseCard from "@/src/components/base/BaseCard";
 import { useParams } from "next/navigation";
 import testData from "@/constants/tests.json";
-import { useDispatch, useSelector } from "react-redux";
-import { startTimer } from "@/store/reducers/timer";
-import BaseButton from "@/src/components/base/BaseButton";
+import { useDispatch } from "react-redux";
+import { resetTimer } from "@/store/reducers/timer";
+import InstructionsView from "@/src/views/reading/instructionsView";
+import { READING_INSTRUCTIONS } from "@/constants/instructions";
+import ReadingTestView from "@/src/views/reading/ReadingTest";
 
 const Page = () => {
   const { id } = useParams();
   const [test, setTest] = useState<any>({});
+  const [sectionTracker, setSectionTracker] = useState<string>("reading");
+  const [finishedInstructions, setFinishedInstructions] =
+    useState<boolean>(true);
   const dispatch = useDispatch();
 
   useEffect(() => {
     const test = testData.filter((elt: any) => elt.id === id)[0];
     setTest(test);
-    dispatch(startTimer(3));
   }, [id]);
+
+  const skipInstructions = () => {
+    console.log("Shoudld skip instuctions");
+    dispatch(resetTimer());
+    setFinishedInstructions(true);
+  };
 
   return (
     <div>
-      <BaseCard className="space-y-2 px-10">
-        <h1 className="text-primary text-xl font-semibold text-center mt-5 py-2.5">
-          Instructions
-        </h1>
-        <hr />
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit
-            amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
-            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
-            sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
-            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
-            sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
-            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
-            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
-            sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <hr />
-        <div className="py-5 text-center">
-          <BaseButton>Skip (Start test)</BaseButton>
-        </div>
+      <BaseCard className="px-10">
+        {!finishedInstructions && (
+          <InstructionsView
+            handleSkipInstructions={skipInstructions}
+            content={READING_INSTRUCTIONS}
+          />
+        )}
+        {finishedInstructions && sectionTracker === "reading" && (
+          <ReadingTestView
+            passage={test.Reading?.passage}
+            questions={test.Reading?.questions}
+          />
+        )}
       </BaseCard>
     </div>
   );
