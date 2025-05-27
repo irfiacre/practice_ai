@@ -11,15 +11,15 @@ import ReadingTestView from "@/src/views/reading/ReadingTest";
 
 const Page = () => {
   const { id } = useParams();
-  const [test, setTest] = useState<any>({});
+  const [practice, setPracice] = useState<any>({});
   const [sectionTracker, setSectionTracker] = useState<string>("reading");
   const [finishedInstructions, setFinishedInstructions] =
     useState<boolean>(true);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const test = testData.filter((elt: any) => elt.id === id)[0];
-    setTest(test);
+    const practiceData = testData.filter((elt: any) => elt.id === id)[0];
+    setPracice(practiceData);
   }, [id]);
 
   const skipInstructions = () => {
@@ -27,7 +27,6 @@ const Page = () => {
     dispatch(resetTimer());
     setFinishedInstructions(true);
   };
-
   return (
     <div>
       <BaseCard className="px-10">
@@ -39,8 +38,8 @@ const Page = () => {
         )}
         {finishedInstructions && sectionTracker === "reading" && (
           <ReadingTestView
-            passage={test.Reading?.passage}
-            questions={test.Reading?.questions}
+            passage={{title: practice.test?.reading.title || "No passage title --", content: practice.test?.reading.passage}}
+            questions={practice.test?.reading.questions || [{}]}
           />
         )}
       </BaseCard>
