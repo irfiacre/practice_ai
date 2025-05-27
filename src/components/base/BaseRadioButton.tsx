@@ -1,10 +1,10 @@
 import React from "react";
 
-// w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600
-
 const BaseRadioButton = ({
+  value,
   handleClicked,
 }: {
+  value: string;
   handleClicked: (e: any) => void;
 }) => {
   return (
@@ -12,20 +12,11 @@ const BaseRadioButton = ({
       <input
         id="default-radio-1"
         type="radio"
-        value=""
-        onClick={(e) => console.log("----",e.target)}
+        value={value}
+        onClick={(e) => handleClicked(e.target.value)}
         name="default-radio"
-        className="w-16 h-16 text-primary bg-primary hover:bg-primaryDark focus:outline-none  font-medium rounded-md text-md text-center py-3 disabled:bg-border_light"
+        className="w-5 h-5 text-primary bg-primary hover:bg-primaryDark focus:outline-none  font-medium rounded-md text-md text-center py-3 disabled:bg-border_light"
       />
-
-      {/* <button
-        type="radio"
-        onClick={handleSubmit}
-        className="w-full h-16 text-white bg-primary hover:bg-primaryDark focus:outline-none  font-medium rounded-md text-md text-center py-3 disabled:bg-border_light"
-        disabled={loading}
-      >
-        
-      </button> */}
     </div>
   );
 };
