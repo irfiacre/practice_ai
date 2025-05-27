@@ -6,16 +6,14 @@ import Pagination from "./Pagination";
 import Link from "next/link";
 import BaseModel from "../base/BaseModel";
 import CreateOnboardingPlan from "@/src/views/forms/CreateOnboardingPlan";
-import { Icon } from "@iconify/react";
+// import { Icon } from "@iconify/react";
 import { generateId } from "@/util/helpers";
-import {
-  createDocEntry,
-  deleteDocEntryById,
-  updateDocEntry,
-} from "@/services/firebase/helpers";
-import { PLANS_COLLECTION } from "@/constants/collectionNames";
-import { toast } from "react-toastify";
-import PillComponent from '../PillComponent';
+// import {
+//   createDocEntry,
+//   deleteDocEntryById,
+//   updateDocEntry,
+// } from "@/services/firebase/helpers";
+// import { toast } from "react-toastify";
 
 interface SearchableTableProps {
   data: Array<any>;
@@ -66,17 +64,17 @@ const SearchableTable = ({ data }: SearchableTableProps) => {
             courses: [],
           };
 
-      const planAdded = editValues.title
-        ? await updateDocEntry(PLANS_COLLECTION, planFormat.id, planFormat)
-        : await createDocEntry(PLANS_COLLECTION, planFormat);
-      if (planAdded) {
-        toast.success("Course Created", {
-          hideProgressBar: true,
-          closeOnClick: true,
-          autoClose: 3000,
-        });
-        handleCloseModel();
-      }
+      // const planAdded = editValues.title
+      //   ? await updateDocEntry(PLANS_COLLECTION, planFormat.id, planFormat)
+      //   : await createDocEntry(PLANS_COLLECTION, planFormat);
+      // if (planAdded) {
+      //   toast.success("Course Created", {
+      //     hideProgressBar: true,
+      //     closeOnClick: true,
+      //     autoClose: 3000,
+      //   });
+      //   handleCloseModel();
+      // }
       setLoading(false);
     }
   };
@@ -99,16 +97,16 @@ const SearchableTable = ({ data }: SearchableTableProps) => {
     });
   };
 
-  const handleDelete = async (plan: any) => {
-    const deleted = await deleteDocEntryById(PLANS_COLLECTION, plan.id);
-    if (deleted) {
-      toast.success(`${plan.title} is Deleted`, {
-        hideProgressBar: true,
-        closeOnClick: true,
-        autoClose: 3000,
-      });
-    }
-  };
+  // const handleDelete = async (plan: any) => {
+  //   const deleted = await deleteDocEntryById(PLANS_COLLECTION, plan.id);
+  //   if (deleted) {
+  //     toast.success(`${plan.title} is Deleted`, {
+  //       hideProgressBar: true,
+  //       closeOnClick: true,
+  //       autoClose: 3000,
+  //     });
+  //   }
+  // };
 
   return (
     <BaseCard className="px-10 py-5">
