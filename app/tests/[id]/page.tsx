@@ -27,9 +27,13 @@ const Page = () => {
     dispatch(resetTimer());
     setFinishedInstructions(true);
   };
+
+  const handleNextQuestion = () => {
+    console.log("------------->");
+  };
   return (
     <div>
-      <BaseCard className="px-10">
+      <BaseCard className="p-6">
         {!finishedInstructions && (
           <InstructionsView
             handleSkipInstructions={skipInstructions}
@@ -38,8 +42,12 @@ const Page = () => {
         )}
         {finishedInstructions && sectionTracker === "reading" && (
           <ReadingTestView
-            passage={{title: practice.test?.reading.title || "No passage title --", content: practice.test?.reading.passage}}
+            passage={{
+              title: practice.test?.reading.title || "No passage title --",
+              content: practice.test?.reading.passage,
+            }}
             questions={practice.test?.reading.questions || [{}]}
+            handleNextClicked={handleNextQuestion}
           />
         )}
       </BaseCard>

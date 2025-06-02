@@ -22,6 +22,286 @@
             "answer": 1
           },
           {
+            "question": "What is the greenhouse effect?",
+            "options": [
+              "The cooling of the Earth's atmosphere.",
+              "The trapping of heat by greenhouse gases.",
+              "The process of photosynthesis.",
+              "The formation of clouds."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What evidence supports the link between human activities and climate change?",
+            "options": [
+              "Ancient cave paintings.",
+              "Ice core data showing increased CO2 levels.",
+              "The migration patterns of birds.",
+              "The formation of the Grand Canyon."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What are some of the consequences of climate change mentioned in the passage?",
+            "options": [
+              "Increased biodiversity and ecosystem growth.",
+              "Rising sea levels and extreme weather events.",
+              "A decrease in global temperatures.",
+              "The formation of new mountain ranges."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the goal of the Paris Agreement?",
+            "options": [
+              "To promote the use of fossil fuels.",
+              "To limit global warming through emission reductions.",
+              "To increase industrial pollution.",
+              "To expand deforestation."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is required to address the challenges of climate change?",
+            "options": [
+              "Increased reliance on non-renewable resources.",
+              "A global effort to reduce greenhouse gas emissions and adapt.",
+              "The abandonment of scientific research.",
+              "The privatization of natural resources."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is emphasized by the scientific community regarding climate change?",
+            "options": [
+              "The lack of urgency in addressing the issue.",
+              "The potential for irreversible changes if emissions are not mitigated.",
+              "The benefits of increased industrial pollution.",
+              "The insignificance of human impact on the environment."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the primary driver of the current unprecedented rate of climate change?",
+            "options": [
+              "Solar radiation variations.",
+              "Human activities such as burning fossil fuels.",
+              "Volcanic activity.",
+              "Changes in Earth's orbit."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What are climate models used for?",
+            "options": [
+              "To predict future weather patterns only.",
+              "To simulate and project future climate scenarios.",
+              "To measure the speed of wind currents.",
+              "To calculate astronomical distances."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is a key challenge in implementing international climate agreements?",
+            "options": [
+              "The abundance of natural resources.",
+              "Political and economic obstacles.",
+              "The lack of scientific data.",
+              "The absence of global communication networks."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What does adapting to climate change involve?",
+            "options": [
+              "Ignoring the impacts on vulnerable communities.",
+              "Developing strategies to protect communities and enhance infrastructure.",
+              "Increasing the use of fossil fuels.",
+              "Reducing efforts to conserve natural resources."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the fundamental issue highlighted in the passage regarding climate change?",
+            "options": [
+              "A purely economic concern.",
+              "A matter of human survival and well-being.",
+              "A temporary weather phenomenon.",
+              "A scientific curiosity with no practical implications."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is crucial for ensuring a sustainable future?",
+            "options": [
+              "Ignoring environmental concerns.",
+              "Balancing economic development with environmental sustainability.",
+              "Prioritizing economic growth at any environmental cost.",
+              "Depleting natural resources for immediate gains."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What historical period saw a sharp increase in atmospheric carbon dioxide levels?",
+            "options": [
+              "The Stone Age.",
+              "The Industrial Revolution.",
+              "The Renaissance.",
+              "The Medieval Era."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "How do natural processes influence the Earth's climate?",
+            "options": [
+              "By exclusively causing warming trends.",
+              "By leading to periods of both warming and cooling.",
+              "By having no impact on global temperatures.",
+              "By only causing cooling trends."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What are some examples of natural processes that affect climate?",
+            "options": [
+              "Industrial pollution and deforestation.",
+              "Variations in solar radiation and volcanic activity.",
+              "Urbanization and population growth.",
+              "Technological advancements."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the primary concern regarding the current rate of climate change?",
+            "options": [
+              "Its slow pace.",
+              "Its unprecedented speed.",
+              "Its lack of impact on ecosystems.",
+              "Its predictability."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "How does deforestation contribute to climate change?",
+            "options": [
+              "By increasing the production of oxygen.",
+              "By reducing the absorption of carbon dioxide.",
+              "By cooling the atmosphere.",
+              "By enhancing biodiversity."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What do ice core data reveal about atmospheric carbon dioxide levels?",
+            "options": [
+              "A decrease over time.",
+              "A sharp increase since the Industrial Revolution.",
+              "A stable level throughout history.",
+              "A correlation with volcanic eruptions only."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the purpose of enhancing infrastructure resilience?",
+            "options": [
+              "To increase vulnerability to natural disasters.",
+              "To protect against the impacts of climate change.",
+              "To promote the use of fossil fuels.",
+              "To ignore the effects of sea-level rise."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is a major consequence of rising sea levels?",
+            "options": [
+              "Increased landmass.",
+              "Threat to coastal communities.",
+              "Formation of new islands.",
+              "Expansion of deserts."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What are some health problems caused by more frequent heatwaves?",
+            "options": [
+              "Improved cardiovascular health.",
+              "Heatstroke and dehydration.",
+              "Enhanced immune system function.",
+              "Increased bone density."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "How do changes in precipitation patterns affect the environment?",
+            "options": [
+              "By increasing the availability of freshwater.",
+              "By leading to droughts and floods.",
+              "By stabilizing ecosystem conditions.",
+              "By reducing soil erosion."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the role of renewable energy technologies in addressing climate change?",
+            "options": [
+              "To increase greenhouse gas emissions.",
+              "To reduce reliance on fossil fuels.",
+              "To promote deforestation.",
+              "To enhance industrial pollution."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is a key factor in balancing economic development with environmental sustainability?",
+            "options": [
+              "Ignoring environmental concerns.",
+              "Prioritizing economic growth at any cost.",
+              "Ensuring that future generations inherit a healthy planet.",
+              "Depleting natural resources rapidly."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the scientific community's stance on the urgency of climate action?",
+            "options": [
+              "There is no need for immediate action.",
+              "Action is urgently needed to prevent irreversible changes.",
+              "The effects of climate change are negligible.",
+              "Climate change is a natural phenomenon with no human influence."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the primary focus of the discussion on sustainable energy sources?",
+            "options": [
+              "Increasing the use of non-renewable resources.",
+              "Transitioning away from fossil fuels.",
+              "Expanding industrial pollution.",
+              "Promoting deforestation for energy production."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the main challenge in protecting vulnerable communities from climate change?",
+            "options": [
+              "The lack of scientific data.",
+              "Developing and implementing effective adaptation strategies.",
+              "The absence of global communication networks.",
+              "The abundance of natural resources."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the ultimate goal of conserving natural resources in the context of climate change?",
+            "options": [
+              "To exploit them for immediate economic gains.",
+              "To ensure their availability for future generations.",
+              "To accelerate their depletion.",
+              "To ignore their importance in ecosystem stability."
+            ],
+            "answer": 1
+          },
+          {
             "question": "What is the primary factor that has led to a significant increase in atmospheric greenhouse gases?",
             "options": [
               "Natural geological processes.",

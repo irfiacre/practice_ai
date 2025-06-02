@@ -79,9 +79,9 @@ const TestTopNav = ({
       <div className="mr-6 flex flex-row gap-3 items-center text-notificationIconColor">
         <div>
           <div className="relative inline-block text-left w-full">
-            <BaseButton handleClick={() => handleNextBtnClick()}>
+            {/* <BaseButton handleClick={() => handleNextBtnClick()}>
               Next
-            </BaseButton>
+            </BaseButton> */}
           </div>
         </div>
       </div>
