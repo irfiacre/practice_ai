@@ -3,10 +3,10 @@ import BaseRadioButton from "../base/BaseRadioButton";
 
 const QuestionComponent = ({
   content,
-  handleSelectedOption,
+  handleSubmitAnswer,
 }: {
   content: any;
-  handleSelectedOption: (data: string) => void;
+  handleSubmitAnswer: (data: string) => void;
 }) => {
   const { question, options } = content;
   return (
@@ -17,7 +17,7 @@ const QuestionComponent = ({
           <div className="flex justify-start items-center" key={option}>
             <BaseRadioButton
               value={option}
-              handleClicked={(value) => handleSelectedOption(value)}
+              handleClicked={(value) => handleSubmitAnswer(value)}
             />
             <span>{option}</span>
           </div>

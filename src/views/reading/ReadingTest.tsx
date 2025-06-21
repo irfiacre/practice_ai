@@ -1,6 +1,7 @@
 import BaseButton from "@/src/components/base/BaseButton";
 import Passage from "@/src/components/testUI/passage";
 import QuestionComponent from "@/src/components/testUI/question";
+import SummaryQuestion from "@/src/components/testUI/summary/summaryQuestion";
 import { addAnswer } from "@/store/reducers/attempt/readingAnswers";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -41,12 +42,15 @@ const ReadingTestView = ({
     setSelectedOption(null);
     handleNextClicked();
   };
+  const currentQuestion = questions[currentQuestionIndex];
 
   return (
     <div className="items-start flex justify-start gap-2">
-      <div className="w-full">
-        <Passage content={passage.content} title={passage.title} />
-      </div>
+      {!currentQuestion.summary && (
+        <div className="w-full">
+          <Passage content={passage.content} title={passage.title} />
+        </div>
+      )}
       <div className="w-full">
         <div className="float-right">
           <BaseButton className="py-1" handleClick={handleNextQuestion}>
@@ -54,10 +58,14 @@ const ReadingTestView = ({
             Next{" "}
           </BaseButton>
         </div>
-        <QuestionComponent
-          handleSelectedOption={(option) => setSelectedOption(option)}
-          content={questions[currentQuestionIndex]}
-        />
+        {currentQuestion.summary ? (
+          <SummaryQuestion content={questions[currentQuestionIndex]}/>
+        ) : (
+          <QuestionComponent
+            handleSubmitAnswer={(option) => setSelectedOption(option)}
+            content={questions[currentQuestionIndex]}
+          />
+        )}
       </div>
     </div>
   );

@@ -11,6 +11,19 @@
         "title": "evolution of the Earth's climate system",
         "passage": "The evolution of the Earth's climate system has been a subject of intense scientific scrutiny for decades. Understanding the intricate interplay of natural and anthropogenic factors that influence global temperatures and weather patterns is crucial for predicting future climate scenarios. Over millions of years, the Earth's climate has undergone significant shifts, driven by phenomena such as variations in solar radiation, volcanic activity, and changes in the Earth's orbit. These natural processes have led to periods of both warming and cooling, shaping the planet's ecosystems and influencing the distribution of life. However, the current era is marked by an unprecedented rate of climate change, primarily attributed to human activities. The burning of fossil fuels, deforestation, and industrial processes have significantly increased the concentration of greenhouse gases in the atmosphere, trapping heat and causing a rise in global temperatures. This phenomenon, known as the greenhouse effect, has far-reaching consequences, including sea-level rise, extreme weather events, and disruptions to ecosystems. Scientific research has provided compelling evidence of the link between human activities and climate change. Ice core data, for instance, reveals a sharp increase in atmospheric carbon dioxide levels since the Industrial Revolution, coinciding with the rapid expansion of industrialization and fossil fuel consumption. Climate models, sophisticated computer simulations that incorporate various climate factors, consistently project significant warming trends if greenhouse gas emissions continue unabated. The impacts of climate change are already being felt across the globe, with rising sea levels threatening coastal communities, more frequent and intense heatwaves causing health problems, and changes in precipitation patterns leading to droughts and floods. Addressing this challenge requires a concerted global effort to reduce greenhouse gas emissions and transition to sustainable energy sources. International agreements, such as the Paris Agreement, aim to limit global warming by setting targets for emission reductions and promoting renewable energy technologies. However, the implementation of these agreements faces numerous challenges, including political and economic obstacles. Furthermore, adapting to the inevitable impacts of climate change is also essential. This involves developing strategies to protect vulnerable communities, enhance infrastructure resilience, and conserve natural resources. The future of the Earth's climate hinges on the choices we make today. The scientific community continues to emphasize the urgency of action, highlighting the potential for irreversible changes if we fail to mitigate greenhouse gas emissions. The preservation of our planet's climate system is not merely an environmental concern but a fundamental issue of human survival and well-being. The challenge lies in balancing economic development with environmental sustainability, ensuring that future generations inherit a planet capable of supporting a thriving civilization.",
         "questions": [
+           {
+            "summary": true,
+            "question": "An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage. Some sentences do not belong in the summary because they express ideas that are not presented in the passage or are minor ideas in the passage. This question is worth 2 points.",
+            "options": [
+              "Their enhanced resilience.",
+              "Their vulnerability to rising sea levels and ocean acidification.",
+              "Their improved hey and expansion.",
+              "Their enhaned resilience.",
+              "Their vulneability to rising sea levels and ocean acidification.",
+              "Their improvd growth and expansion."
+            ],
+            "answer": "Their enhanced resilience.Their vulnerability to rising sea levels and ocean acidification.Their improved hey and expansion."
+          },
           {
             "question": "What is the primary focus of the passage?",
             "options": [
@@ -31,6 +44,8 @@
             ],
             "answer": 1
           }
+
+         
         ]
       },
       "listening": {
